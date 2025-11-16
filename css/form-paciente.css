@@ -125,6 +125,10 @@ label {
   gap: 20px;
 }
 
+.row-8{
+    padding-top: 20px;
+}
+
 input, select{
   width: 100%;
   height: 40px;
@@ -184,7 +188,4 @@ input, select{
 .button button[type="submit"]:hover {
     background-color: #170a52;
 }
-
-
-
 

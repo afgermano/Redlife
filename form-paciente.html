@@ -1,79 +1,140 @@
-<form action="form-doador"></form>
-        <h1>Torne-se doador!</h1>
-        <p> Doando você ajuda até 4 pessoas que necessitam da transfusão </p>
-        <br>
-
-        <h3>Dados pessoais </h3>
-        <hr>
-        <br>
-        <label for="nome">Nome Completo:</label><br>
-        <input type="text" id="nome" name="nome" placeholder="Confirme seu nome completo" required><br><br>
-
-        <label for="cpf">CPF</label><br>
-        <input type="text" id="cpf" name="cpf" placeholder="Confirme seu CPF" required><br><br>
-
-        <label for="doenca">Possui alguma doença transmissivel?</label><br>
-        <input type="radio" name="doenca" id="doenca_sim" value="sim">
-        <input type="radio" name="doenca" id="doenca_nao" value="nao" checked><br>
-
-        <label for="opcao_doenca">Se sim, quais doenças você possui</label><br>
-        <select id="opcao_doenca" name="opcao_doenca">
-            <option value="hiv">HIV</option>
-            <option value="hepatite_b">Hepatite B</option>
-            <option value="hepatite_c">Hepatite C</option>
-            <option value="sifilis">Sífilis</option>
-            <option value="outras">Outras</option>
-        </select><br><br>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form-paciente.css">
+    <title>Formulário de solicitação</title>
+    <style>
         
-        <label for="medicamento">Está fazendo uso de algum medicamento?</label><br>
-        <input type="radio" name="medicamento" id="medicamento_sim" value="sim">
-        <input type="radio" name="medicamento" id="medicamento_nao" value="nao" checked><br>    
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">Logo</div>
 
-        <label for="opcao_medicamento">Se sim, quais medicamentos você está utilizando?</label><br>
-        <select id="opcao_medicamento" name="opcao_medicamento">
-            <option value="antibioticos">Antibióticos</option>
-            <option value="antidepressivos">Antidepressivos</option>
-            <option value="antihipertensivos">Antihipertensivos</option>
-            <option value="anticoncepcionais">Anticoncepcionais</option>
-            <option value="outros">Outros</option>  
-        </select><br><br>
+        <input type="checkbox" id="toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger" aria-hidden="true">&#9776;</label>
 
-        <label for="peso">Peso (kg):</label><br>
-        <input type="number" id="peso" name="peso" placeholder="Confirme seu peso em kg" required><br><br>
+        <nav class="navbar menu-items">
+            <a href="form-doador.html">Torne-se um doador!</a>
+            <a href="form-paciente.html">Precisa de doação?</a>
+            <a href="#"> <img src="" alt="Foto-perfil"> </a>
+        </nav>
+      </header>
 
-        <label for="tipo_sanguineo">Qual seu tipo sanguineo?</label>
-        <select name="tipo_sanguineo" id="tipo_sanguineo">
-            <option value="a_pos">A+</option>
-            <option value="a_neg">A-</option>
-            <option value="b_pos">B+</option>
-            <option value="b_neg">B-</option>
-            <option value="ab_pos">AB+</option>
-            <option value="ab_neg">AB-</option>
-            <option value="o_pos">O+</option>
-            <option value="o_neg">O-</option>
-        </select> <br><br>
+    <div class="container">
+        <section class="content">
+            <h1>Solicite uma doação</h1>
+            <p>Não se preocupe! Entraremos em contato com o doador mais proximo.</p>
+        </section>
+        <section class="form-doador">
+            <form action="">
+                <h2>Dados pessoais</h2>
+                <br>
+                <div class="row-1">
+                    <div class="item-form">
+                        <label for="nome-completo">Nome completo</label>
+                        <input type="text" id="nome-completo" name="nome-completo" placeholder="Digite seu nome completo" required>
+                    </div>
+                
+                    <div class="item-form">
+                        <label for="cpf">Cpf</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="item-form">
+                        <label for="confirmacao-doenca">Você possui uma doença transmissivel?</label>
+                            <div class="confirm-radio">
+                                <div class="opcao-sim">
+                                    <input type="radio" id="sim" name="confirmacao-doenca" value="sim" required>
+                                    <label for="sim" id="label-sim">Sim</label> 
+                                </div>
+                                <div class="opcao-nao">
+                                    <input type="radio" id="nao" name="confirmacao-doenca" value="nao" required>
+                                    <label for="nao" id="label-nao">Não</label>
+                                </div>
+                            </div>   
+                    </div>  
+                </div>
+                
+                <div class="row-3">
+                    <div class="item-form">
+                        <label for="opcao-doenca">Se sim: Qual doença você possui? (Opcional)</label>
+                        <select name="tipo-doenca" id="tipo-doenca">
+                            <option value="" selected>Selecione uma opção</option>
+                            <option value="hepatite-b">Hepatite B</option>
+                            <option value="hepatite-c">Hepatite C</option>
+                            <option value="hiv">HIV</option>
+                            <option value="sifilis">Sífilis</option>
+                        </select>
+                    </div>
+                </div>
 
-        <h3>Dados da internação </h3>
-        <hr>
-        <br>
-        <label for="cep">CEP:</label><br>
-        <input type="text" id="cep" name="cep" placeholder="Confirme seu CEP" required><br><br>
-        <label for="endereco">Endereço:</label><br>
-        <input type="text" id="endereco" name="endereco" placeholder="Confirme seu endereço" required><br><br>
-        <label for="numero">Número</label>
-        <input type="text" name="numero" id="numero" placeholder="Número da residência" required><br><br>
-        <label for="estado">Estado:</label><br>
-        <select name="estado" id="estado">
-            <option value=""> Selecione seu estado </option>
-        </select><br><br>
-        <label for="cidade">Selecione sua cidade: </label>
-        <select name="cidade" id="cidade">
-            <option value=""> Selecione sua cidade </option>
-        </select>
-        <label for="local_internacao">Hospital da internação:</label>
-        <input type="text" name="local_internacao" id="local_internacao" placeholder="Digite o hospital que será feito a internação:" required>
-        <br>
-        <br>
+                <div class="row-4">
+                    <div class="item-form">
+                        <label for="tipo-sanguineo">Qual seu tipo sanguineo? (Opcional)</label>
+                        <select name="tipo-sanguineo" id="tipo-sanguineo">
+                            <option value="" selected>Selecione uma opção</option>
+                            <option value="a+">A+</option>
+                            <option value="a-">A-</option>
+                            <option value="b+">B+</option>
+                            <option value="b-">B-</option>
+                            <option value="ab+">AB+</option>
+                            <option value="ab-">AB-</option>
+                            <option value="o+">O+</option>
+                            <option value="o-">O-</option>
+                        </select>
 
-        <input type="button" value="Voltar">
-        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+
+                <h2>Endereço</h2>
+                <br>
+                <div class="row-5">
+                    <div class="item-form">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+                    </div>
+                </div>
+
+                <div class="row-6">
+                    <div class="item-form">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="item-form">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="numero" placeholder="Número" required>
+                    </div>
+
+                </div>
+
+                <div class="row-7">
+                    <div class="item-form">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+                    </div>
+                    <div class="item-form">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" placeholder="Digite seu estado" required>
+                    </div>
+                </div>
+
+                <div class="row-8">
+                    <div class="item-form">
+                        <label for="hospital">Hospital da internação</label>
+                        <input type="text" id="hospital" name="hospital" placeholder="Digite o nome do hospital" required>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Concluir</button>
+                </div>
+
+                
+            </form>
+        </section>
+    </div>
