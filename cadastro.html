@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./logotipo.png" type="image/x-icon">   
+    <title>cadastre-se agora!</title>
+ 
+    <style>
+        body {
+            font-family: "Donegal One", serif;
+            background-image: url(./fundoneuri.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+ 
+        .conteiner {
+            background-image: linear-gradient(to top, rgba(85, 85, 85, 0.3), rgba(0, 0, 0, 0.5));
+            border-radius: 20px;
+            width: 500px;
+            padding: 20px;
+            gap: 10px;
+        }
+ 
+        .inputlabel {
+            color: white;
+            text-shadow: 2px 3px 2px black;
+            text-align: center;
+            gap: 10px;
+            
+        }
+ 
+        .internal {
+            display: flex;
+            flex-wrap: wrap;         
+            gap: 40px;               
+            justify-content: center; 
+            margin-top: 10px;
+        }
+ 
+        
+        .internal > div {
+            display: flex;
+            flex-direction: column;
+            width: 45%;   
+            min-width: 200px;
+        }
+ 
+        input, select {
+            outline: none;
+            width: 100%;
+            padding: 5px;
+            cursor: pointer;
+        }
+ 
+        #criarconta {
+            position: relative;
+            height: 30px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            margin-top: 20px;
+            top: 10px;
+        
+        }
+ 
+        
+ 
+        .linka {
+            color: white;
+            text-decoration: none;
+        }
+ 
+        
+        .senha-container {
+            position: relative;
+        }
+ 
+        #eye1 {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            cursor: pointer;
+            color: black;
+            text-shadow: none;
+        }
+ 
+        #autoria {
+            position: relative;
+            margin-top: 10px;
+            font-size: 14px;
+            top: 20px;
+        }
+        label{
+            padding: 3px;
+        }
+ 
+        
+        @media (max-width: 600px) {
+            .conteiner {
+                width: 90%;
+            }
+ 
+            .internal > div {
+                width: 100%;  
+            }
+ 
+            #criarconta {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="page">
+        <div class="conteiner">
+            <form action=" " class="formule">
+                <fieldset style="border: none;">
+ 
+                    <div class="legenda">
+                        
+                    </div>
+ 
+                    <div class="inputlabel">
+ 
+                        <label><b><h1>CRIE SUA CONTA</h1></b></label>
+                        <a href="" class="linka"><p>já possui conta?</p></a>
+ 
+                        <div class="internal">
+ 
+                            <div class="aform">
+                                <label for="nome1"><b>informe seu nome</b></label>
+                                <input type="text" id="nome1" placeholder="digite seu nome completo..." required>
+                            </div>
+ 
+                            <div class="bform">
+                                <label for="cpf1"><b>informe seu CPF</b></label>
+                                <input type="text" id="cpf1" placeholder="digite seu CPF..." required>
+                            </div>
+ 
+                            <div class="cform">
+                                <label for="datanasc1"><b>data de nascimento</b></label>
+                                <input type="date" id="datanasc1" required>
+                            </div>
+ 
+                            <div class="dform">
+                                <label for="genero"><b>gênero</b></label>
+                                <select id="genero" required>
+                                    <option value="">selecione...</option>
+                                    <option value="masculino">masculino</option>
+                                    <option value="feminino">feminino</option>
+                                    <option value="outro">outro</option>
+                                    <option value="não me identificar">não me identificar</option>
+                                </select>
+                            </div>
+ 
+                            <div class="eform">
+                                <label for="email1"><b>informe seu email</b></label>
+                                <input type="email" id="email1" placeholder="digite seu email..." required>
+                            </div>
+ 
+                            <div class="fform senha-container">
+                                <label for="senha1"><b>crie uma senha</b></label>
+                                <input type="password" id="senha1" placeholder="crie sua senha..." required>
+                                <i class="bi bi-eye" id="eye1"></i>
+                            </div>
+ 
+                        </div>
+ 
+                        <button type="submit" id="criarconta">criar conta</button>
+                        <p id="autoria">© Sistema De Doação De Sangue | 1º ADS Fatec Lins-Sp.</p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+ 
+    <script>
+        const eye = document.getElementById("eye1");
+        const pass = document.getElementById("senha1");
+ 
+        eye.addEventListener("click", () => {
+            const type = pass.getAttribute("type") === "password" ? "text" : "password";
+            pass.setAttribute("type", type);
+        });
+    </script>
+ 
+</body>
+</html>
+ 

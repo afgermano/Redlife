@@ -1,0 +1,90 @@
+main{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    background-color:#F4F4F4;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+}
+header{
+    display: flex;
+    background-color:rgb(241, 241, 241) ;
+    box-shadow: 0px 2px 2px 0px rgba( 0, 0, 0, 0.4);
+} 
+.usuario{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 5px 15px 40px;
+    
+}
+.sangue{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    text-transform: uppercase;
+    background-color: #C94A4A;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+}
+.usuario img{
+    height: 90px;
+    margin-bottom: 9px;
+    border-radius: 100%; 
+}
+fieldset{
+    padding: 20px;
+    max-width: 400px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;  
+}
+.item{
+    margin: 10px 10px 20px 10px;
+}
+.botao{
+    position: relative;
+    top: 50px;
+    right: 70px;  
+}
+.botao input{
+    margin: 5px;
+}
+footer{
+display: flex;
+justify-content: center;
+align-items: end;
+margin: 30px 5px 5px 5px;
+border-top: 1px solid;
+font-size: 14px;
+}
+@media (min-width: 1200px){
+    form{
+        display:flex;  
+        align-items:center;
+        flex-grow: 2;
+        flex-wrap: wrap;
+    }
+    .botao{
+        position: relative;
+        top: 40px;
+        right: 70px;  
+    }
+}
+@media screen (max-width: 600px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
