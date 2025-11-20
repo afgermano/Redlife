@@ -34,6 +34,8 @@
   text-decoration: none;
   font-size: 15px;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 
 .navbar a:hover {
@@ -43,6 +45,13 @@
 #toggle,
 .hamburger {
   display: none;
+}
+
+.profile-page{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -63,3 +72,148 @@
     background: #111;
   }
 }
+
+.main-content{
+   padding-top: 60px;
+}
+
+.welcome-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #dadada;
+  width: 100%;
+  height: 100vh;
+}
+
+.info-doador{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.info{
+  width: 300px;
+  text-align: center;
+  background-color: #0b052b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-become-doador{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  margin-top: 30px;
+  
+}
+
+.become-doador{
+  width: 50%;
+  height: 250px;
+  background-color: #dadada;
+  box-shadow: 0px 2px 2px 0px rgba( 0, 0, 0, 0.4);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.become-doador p, h2{
+  margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: #0b052b;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button button:hover {
+    background-color: #333;
+}
+
+.container-about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.about-img{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text{
+  flex: 1;
+  padding: 20px;
+  color: #333;
+}
+
+.about-img img {
+max-width: 50%;
+height: auto;
+border-radius: 10px;
+}
+
+.container-request-blood{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  margin-top: 30px;
+  
+}
+
+.request-blood{
+  width: 50%;
+  height: 250px;
+  background-color: #dadada;
+  box-shadow: 0px 2px 2px 0px rgba( 0, 0, 0, 0.4);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.request-blood p, h2{
+  margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px;
+    background-color: #0b052b;
+    color: white;
+}
+
+
+
+
+
+
