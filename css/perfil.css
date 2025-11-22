@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+*{
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
 body{
     background-color: #E8A4A4;
-    font-family: "Stack Sans Text", sans-serif;
 }
 main{
     display: flex;
