@@ -10,12 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header class="menu">
+        <div class="logo">Logo</div>
+
+        <input type="checkbox" id="toggle" class="menu-toggle" />
+        <label for="toggle" class="hamburger">&#9776;</label>
+
+        <nav class="navbar menu-items">
+            <a href="index.html">Início</a>
+            <a href="form-doador.html">Torne-se um doador!</a>
+            <a href="form-paciente.html">Precisa de doação?</a>
+            <a href="perfil.html"> <img class="profile-page" src="midia/perfil.png" alt="Foto-perfil"> </a>
+        </nav>
+      </header>
+
     <main>
-
-        <header>
-            <span><br><br><br></span>
-        </header> 
-
         <section class="usuario">
 
             <div class="perfil">
@@ -30,9 +40,9 @@
                      <textarea wrap="hard" disabled id="aviso">⚠️Aviso Importante sobre Alteração de Informações⚠️: A atualização ou modificação de dados no sistema de doação de sangue deve ser realizada com máxima atenção. Informações incorretas podem gerar sérios problemas, incluindo:Incompatibilidade sanguínea, colocando em risco a saúde de receptores e doadores, Falhas no agendamento, afetando o funcionamento das coletas e atendimentos, Bloqueio indevido de doadores, caso informações de saúde ou elegibilidade sejam registradas incorretamente, Erros em contatos importantes, como avisos de retorno, campanhas ou convocação para doações urgentes
                      Para garantir a segurança e integridade dos dados:Revise todas as informações antes de confirmar, Mantenha seus dados pessoais e de saúde sempre atualizados e verdadeiros, Em caso de dúvida ou erro, entre em contato imediatamente com a equipe responsável.</textarea>
                     
-                     <a href="perfil.html" target="_self">cancelar</a>
+                     <a class="aviso-troca" href="perfil.html" target="_self">cancelar</a>
 
-                     <a href="troca-info.html">Trocar</a>
+                     <a class="aviso-troca" href="troca-info.html">Trocar</a>
                 </div>
 
             </div>
@@ -48,8 +58,7 @@
         
         <section class="historico">
             <fieldset>
-                <legend><h1>historico</h1></legend>
-
+                <legend>Histórico</legend>
                 <div class="hist1">
                     <span></span>
                         
