@@ -176,22 +176,22 @@ input, select{
 
 /* Botão cancelar */
 .button button[type="reset"] {
-    background-color: #ccc;
-    color: #333;
+    background-color: #d9534f;
+    color: white;
 }
 
 .button button[type="reset"]:hover {
-    background-color: #b5b5b5;
+    background-color: #f7b2b2;
 }
 
 /* Botão enviar */
 .button button[type="submit"] {
-    background-color: #0b052b;
+    background-color: #5cb85c;
     color: white;
 }
 
 .button button[type="submit"]:hover {
-    background-color: #170a52;
+    background-color: #97f897;
 }
 
 

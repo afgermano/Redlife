@@ -24,9 +24,7 @@
       </header>
       
     <main>
-            <header>
-             <span><br><br><br></span>
-            </header> 
+
         <section class="usuario">
 
             <div class="perfil">
@@ -40,60 +38,41 @@
         </section>
 
         <section class="formulario">
-            <fieldset>
+    <fieldset>
 
-                <legend>Alterar informações</legend>
+        <legend>Alterar informações</legend>
 
-                <form action="perfil.html" method="post">
-                    
-                    <div class="item">
-                        <label for="name">Nome</label><br>
-                        <input type="text" id="name"  placeholder="Informe seu nome" required>
-                    </div>
-
-                    <div class="item">
-                        <label for="nunber">Numero</label><br>
-                        <input type="tel" id="nunber" pattern="\d{2} \d{5}-\d{4}" placeholder="00 00000-0000">
-                    </div>
-                    
-                    <div class="item">
-                        <label for="cep">CEP</label><br>
-                        <input type="text" id="txtcep" pattern="\d{5}-\d{3}" placeholder="00000-000"> 
-                    </div>
-
-                    <div class="item">
-                        <label for="txtestado">Estado</label><br>
-                        <input type="text" id="txtestado" disabled> 
-                    </div>
-
-
-                    <div class="item">
-                        <label for="txtcidade">Cidade</label><br>
-                        <input type="text" id="txtcidade" disabled > 
-                    </div>
-
-                    <div class="item">
-                        <label for="txtbairo">Bairo</label><br>
-                        <input type="text" id="txtbairo" disabled > 
-                    </div>
-
-                    <div class="item">
-                        <label for="txtrua">Rua</label><br>
-                        <input type="text" id="txtrua" disabled > 
-                    </div>
-
-                    <div class="botao">
-                        <input type="reset" value="Apagar">
-                        <input type="submit" value="Confirmar" id="confirmar">
-                    </div>
-                     
-
-                </form>
+        <form action="perfil.html" method="post">
             
+            <div class="item">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" placeholder="Digite seu nome" required>
+            </div>
 
+            <div class="item">
+                <label for="number">Telefone</label>
+                <input type="tel" id="number" placeholder="Digite seu número">
+            </div>
 
-            </fieldset>
-        </section>
+            <div class="item">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="item">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+
+            <div class="botao">
+                <input type="reset" value="Apagar">
+                <input type="submit" value="Confirmar" id="confirmar">
+            </div>
+
+        </form>
+
+    </fieldset>
+</section>
 
         <footer>
             <p></p>
