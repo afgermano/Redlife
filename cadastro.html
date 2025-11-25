@@ -8,137 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="icon" href="midia/logotipo.png" type="image/x-icon">   
+    <link rel="stylesheet" href="css/signup.css">
     <title>cadastre-se agora!</title>
- 
-    <style>
-        body {
-            background-image: url('midia/fundoneuri.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
- 
-        .conteiner {
-            background-image: linear-gradient(to top, rgba(85, 85, 85, 0.3), rgba(0, 0, 0, 0.5));
-            border-radius: 20px;
-            width: 500px;
-            padding: 20px;
-            gap: 10px;
-        }
- 
-        .inputlabel {
-            color: white;
-            text-shadow: 2px 3px 2px black;
-            text-align: center;
-            gap: 10px;
-            
-        }
- 
-        .internal {
-            display: flex;
-            flex-wrap: wrap;         
-            gap: 40px;               
-            justify-content: center; 
-            margin-top: 10px;
-        }
- 
-        
-        .internal > div {
-            display: flex;
-            flex-direction: column;
-            width: 45%;   
-            min-width: 200px;
-        }
- 
-        input, select {
-            outline: none;
-            width: 100%;
-            padding: 5px;
-            cursor: pointer;
-        }
- 
-        #criarconta {
-            position: relative;
-            height: 30px;
-            width: 150px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            margin-top: 20px;
-            top: 10px;
-        
-        }
- 
-        
- 
-        .linka {
-            color: white;
-            text-decoration: none;
-        }
- 
-        
-        .senha-container {
-            position: relative;
-        }
- 
-        #eye1 {
-            position: absolute;
-            right: 10px;
-            top: 30px;
-            cursor: pointer;
-            color: black;
-            text-shadow: none;
-        }
- 
-        #autoria {
-            position: relative;
-            margin-top: 10px;
-            font-size: 14px;
-            top: 20px;
-        }
-        label{
-            padding: 3px;
-        }
- 
-        
-        @media (max-width: 600px) {
-            .conteiner {
-                width: 90%;
-            }
- 
-            .internal > div {
-                width: 100%;  
-            }
- 
-            #criarconta {
-                width: 80%;
-            }
-        }
-    </style>
 </head>
 <body>
  
     <div class="page">
         <div class="conteiner">
             <form action=" " class="formule">
-                <fieldset style="border: none;">
- 
-                    <div class="legenda">
-                        
-                    </div>
- 
                     <div class="inputlabel">
- 
-                        <label><b><h1>CRIE SUA CONTA</h1></b></label>
-                        <a href="" class="linka"><p>já possui conta?</p></a>
+                        <label><b><h1>Crie uma conta!</h1></b></label>
+                        <a href="css/login.css" class="linka"><p>Já possui uma conta?</p></a>
  
                         <div class="internal">
- 
                             <div class="aform">
                                 <label for="nome1"><b>informe seu nome</b></label>
                                 <input type="text" id="nome1" placeholder="digite seu nome completo..." required>
@@ -181,7 +63,6 @@
                         <button type="submit" id="criarconta">criar conta</button>
                         <p id="autoria">© Sistema De Doação De Sangue | 1º ADS Fatec Lins-Sp.</p>
                     </div>
-                </fieldset>
             </form>
         </div>
     </div>
