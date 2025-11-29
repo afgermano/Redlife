@@ -226,3 +226,9 @@ main {
     }
 }
 
+footer p{
+    text-align: center;
+    padding: 20px;
+    background-color: #0b052b;
+    color: white;
+}

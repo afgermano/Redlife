@@ -54,25 +54,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-.hamburger {
-    display: block;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: right;
-    padding: 5px 10px;
-    color: #fff;
-  }
-
-  .menu-items {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    background: #111;
-  }
-}
-
 .main-content{
    padding-top: 60px;
 }
@@ -212,6 +193,74 @@ footer p{
     color: white;
 }
 
+
+@media (max-width: 768px) {
+.hamburger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background: #111;
+  }
+
+  .info-doador{
+    flex-wrap: wrap;
+  }
+
+  .become-doador{
+    height: auto;
+  }
+
+  .request-blood{
+    height: auto;
+  }
+
+  .container-about{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .hamburger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background: #111;
+  }
+
+  .info-doador{
+    flex-wrap: nowrap;
+    margin: 10px;
+  }
+
+  .become-doador{
+      height: auto;
+  }
+
+  .request-blood{
+      height: auto;
+  }
+}
 
 
 

@@ -1,0 +1,149 @@
+body{
+    background-image: url(../midia/globulos.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.logonbox{
+    height: 300px;
+    max-width: 370px;
+    background-image: linear-gradient(to top, rgba(85, 85, 85, 0.3), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0,0.8) 0px 10px 25px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.userlog img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form{
+
+
+    margin-top: 40px;
+}
+
+label{
+    text-align: left;
+    font-weight: bold;
+    color: white;
+
+}
+
+input{
+    width: 100%;
+    background-color: rgba(236, 236, 236, 0.9);
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgb(0, 0, 0,0.4) 0px 4px 10px -2px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+/*#eye1{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    cursor: pointer;
+}  */
+
+
+button{
+    background-color: rgba(252, 252, 252, 0.8);
+    box-shadow: rgb(0, 0, 0,0.9) 0px 4px 10px -2px;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+    
+    
+}
+#but1{
+    background-color: rgba(252, 252, 252, 0.8);
+    box-shadow: rgb(0, 0, 0,0.9) 0px 4px 10px -2px;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+    
+    
+}
+.botao{
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.link-problemas{
+    margin-top: -6px;
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    color: aliceblue;
+}
+
+@media (max-width: 580px){
+           
+           }
+
+
+
+#autoria{
+    position: absolute;
+    top: 510px;
+    left: 11%;
+    font-size: 15px;
+    white-space: nowrap;
+    left: -30px;
+}
+.qsem{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+#senha{
+    width: 250px;
+    
+}
+#login{
+    width: 250px;
+}
+.input1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#eye1{
+    position: absolute;
+    top: 166px;
+    left: 262px;
+}

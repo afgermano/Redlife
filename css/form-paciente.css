@@ -54,25 +54,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-.hamburger {
-    display: block;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: right;
-    padding: 5px 10px;
-    color: #fff;
-  }
-
-  .menu-items {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    background: #111;
-  }
-}
-
 .container {
     padding: 90px;
 }
@@ -198,3 +179,76 @@ input, select{
     background-color: #97f897;
 }
 
+footer p{
+    text-align: center;
+    padding: 20px;
+    background-color: #0b052b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+.hamburger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background: #111;
+  }
+
+  .row-1,
+  .row-2,
+  .row-6,
+  .row-7,
+  .row-8 {
+        flex-direction: column;   /* inputs um abaixo do outro */
+        justify-content: center;
+        gap: 15px;
+    }
+
+   .button {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .button button {
+        width: 100%;  /* botões ocupam toda a largura */
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .hamburger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: right;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background: #111;
+  }
+
+  .row-1,
+  .row-2,
+  .row-6,
+  .row-7
+  .row-8{
+        flex-direction: column;   /* inputs um abaixo do outro */
+        justify-content: center;
+        gap: 15px;
+    }
+}
