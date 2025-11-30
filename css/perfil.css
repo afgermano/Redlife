@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
 
-* {
+*{
     font-family: "Stack Sans Headline", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -47,9 +50,11 @@ body {
   opacity: 0.7;
 }
 
-#toggle,
-.hamburger {
+#toggle {
   display: none;
+}
+.hamburger{
+    display: none;
 }
 
 .profile-page{
@@ -57,35 +62,6 @@ body {
   height: 30px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-/* --------------- RESPONSIVO MENU ---------------- */
-
-@media (max-width: 768px) {
-
-  .hamburger {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-      padding: 10px;
-      color: #fff;
-  }
-
-  .menu-items {
-      display: none;
-      flex-direction: column;
-      gap: 15px;
-      padding: 20px;
-      background: #111;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-  }
-
-  #toggle:checked ~ .menu-items {
-      display: flex;
-  }
 }
 
 /* MAIN */
@@ -168,7 +144,11 @@ main {
     width: 300px;
     z-index: 100;
 }
-
+.aviso-troca:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color:#91d899 ;
+}
 #aviso {
     background-color: black;
     color: white;
@@ -207,10 +187,34 @@ main {
     text-decoration: underline;
 }
 
-/* TABLET */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* --------------- RESPONSIVO MENU ---------------- */
 
-    .hist1 {
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+        color: #fff;
+    }
+  
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        background: #111;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+  
+    #toggle:checked ~ .menu-items {
+        display: flex;
+    }
+        .hist1 {
         flex-direction: column;
     }
 
@@ -219,16 +223,6 @@ main {
     }
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
-    body {
-        font-size: 10px;
-    }
-}
 
-footer p{
-    text-align: center;
-    padding: 20px;
-    background-color: #0b052b;
-    color: white;
-}
+
+
