@@ -2,13 +2,13 @@
 
 *{
     font-family: "Stack Sans Headline", sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: #f5f5f5;
-    margin: 0;
-    padding: 0;
+body {
+    background-color: #ffffff;
 }
 
 /* ---------------- MENU ---------------- */
@@ -33,12 +33,12 @@ body{
   font-weight: bold;
 }
 
-.navbar {
+.menu-items {
   display: flex;
   gap: 50px;
 }
 
-.navbar a {
+.menu-items a {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
@@ -47,13 +47,15 @@ body{
   align-items: center;
 }
 
-.navbar a:hover {
+.menu-items a:hover {
   opacity: 0.7;
 }
 
-#toggle,
-.hamburger {
+#toggle {
   display: none;
+}
+.hamburger{
+    display: none;
 }
 
 .profile-page{
@@ -68,28 +70,28 @@ body{
 @media (max-width: 768px) {
 
   .hamburger {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-      padding: 10px;
-      color: #fff;
-  }
-
-  .menu-items {
-      display: none;
-      flex-direction: column;
-      gap: 15px;
-      padding: 20px;
-      background: #111;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-  }
-
-  #toggle:checked ~ .menu-items {
-      display: flex;
-  }
+        display: flex;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+        color: #fff;
+    }
+  
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        background: #111;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+  
+    #toggle:checked ~ .menu-items {
+        display: flex;
+    }
 }
 
 /* ---------------- MAIN ---------------- */
